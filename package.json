@@ -2,6 +2,6 @@
   "private": true,
   "workspaces": [
     "gatsby-theme-teranova",
-    "site"
+    "demo"
   ]
 }
