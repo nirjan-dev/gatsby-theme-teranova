@@ -1,11 +1,13 @@
 import React from 'react';
 import Header from './header';
+import SEO from './seo';
 function Layout({ children }) {
   return (
-    <div>
+    <>
+      <SEO />
       <Header />
       <main>{children}</main>
-    </div>
+    </>
   );
 }
 

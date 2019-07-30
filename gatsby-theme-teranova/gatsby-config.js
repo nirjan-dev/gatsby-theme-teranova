@@ -1,4 +1,8 @@
+const config = require('./src/data');
 module.exports = {
+  siteMetadata: {
+    ...config,
+  },
   plugins: [
     {
       resolve: `gatsby-plugin-mdx`,
