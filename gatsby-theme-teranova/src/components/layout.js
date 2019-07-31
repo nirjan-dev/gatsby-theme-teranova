@@ -31,19 +31,19 @@ function Layout({ children }) {
             font-family: ${theme.fonts.heading};
           }
           h1 {
-            font-size: ${theme.fontSizes[6]}rem;
-          }
-          h2 {
             font-size: ${theme.fontSizes[5]}rem;
           }
-          h3 {
+          h2 {
             font-size: ${theme.fontSizes[4]}rem;
           }
-          h4 {
+          h3 {
             font-size: ${theme.fontSizes[3]}rem;
           }
-          h5 {
+          h4 {
             font-size: ${theme.fontSizes[2]}rem;
+          }
+          h5 {
+            font-size: ${theme.fontSizes[1]}rem;
           }
         `}
       />
