@@ -3,7 +3,7 @@ export const theme = {
     body: '"Roboto",sans-serif',
     heading: '"Volkron",sans-serif',
   },
-  fontSizes: [13.33, 19.2, 23, 27.6, 33, 40],
+  fontSizes: [0.618, 1, 1.618, 2.618, 4.236, 6.854, 11.089],
   fontWeights: {
     body: 400,
     heading: '700',
@@ -18,7 +18,7 @@ export const theme = {
     caps: '0.2rem',
   },
   colors: {
-    primary: '#FFD70',
+    primary: '#FFD700',
     dark: '#4C4637',
     grey: '#B2AB99',
     secondaryLight: '#00FFD8',

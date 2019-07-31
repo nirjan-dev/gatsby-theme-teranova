@@ -4,22 +4,26 @@ import PropTypes from 'prop-types';
 
 const navItems = [
   {
-    name: 'Home',
-    link: '/',
+    name: 'About',
+    link: '#about',
   },
   {
-    name: 'Blog',
-    link: '/blog',
+    name: 'Services',
+    link: '#services',
+  },
+  {
+    name: 'Team',
+    link: '#team',
   },
   {
     name: 'Contact',
-    link: '/contact',
+    link: '#contact',
   },
 ];
 
 const Nav = styled.nav`
   @media (max-width: 844px) {
-    background-color: red;
+    background-color: ${props => props.theme.colors.primary};
     position: fixed;
     top: 0;
     left: 0;
@@ -67,6 +71,9 @@ const Ul = styled.ul`
       &:nth-of-type(3) {
         transition-delay: 300ms;
       }
+      &:nth-of-type(4) {
+        transition-delay: 400ms;
+      }
     }
   }
 `;
@@ -75,7 +82,7 @@ const StyledLink = styled.a`
   color: black;
   transition: all 300ms ease-out;
   border-bottom: 3px solid transparent;
-  padding: 1.9rem 1rem;
+  padding: 1.3rem 1rem;
   position: relative;
   text-decoration: none;
   @media (min-width: 845px) {
@@ -87,7 +94,7 @@ const StyledLink = styled.a`
       bottom: 0;
       width: 100%;
       height: 3px;
-      background-color: red;
+      background-color: ${props => props.theme.colors.secondary};
       transform: scale(0);
       transition: 200ms transform ease-out;
     }
