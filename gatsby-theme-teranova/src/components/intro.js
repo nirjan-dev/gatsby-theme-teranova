@@ -30,7 +30,7 @@ const Banner = styled.section`
 `;
 function Intro() {
   const data = useStaticQuery(graphql`
-    query MyQuery {
+    {
       mdx(frontmatter: { type: { eq: "intro" } }) {
         body
         frontmatter {
