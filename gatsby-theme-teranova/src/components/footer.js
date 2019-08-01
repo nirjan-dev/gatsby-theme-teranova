@@ -7,19 +7,34 @@ const StyledFooter = styled.footer`
   text-align: center;
   small {
     margin: 0 ${props => props.theme.spacing[1]}rem;
+    display: block;
+  }
+  .bottom-footer {
+    justify-content: space-around;
+    align-items: center;
+  }
+  a {
+    font-weight: bold;
+    color: ${props => props.theme.colors.secondaryDark};
   }
 `;
 function Footer() {
   return (
     <StyledFooter>
       <Container>
-        <small>2019 All Rights Reserved</small>
-        <small>
-          Website By:{' '}
-          <a href="https://www.studiodagger.com" target="_blank">
-            Studiodagger
-          </a>
-        </small>
+        <div className="bottom-fotter">
+          <small>2019 All Rights Reserved</small>
+          <small>
+            Website By:
+            <a
+              href="https://www.studiodagger.com"
+              rel="noopener"
+              target="_blank"
+            >
+              Studiodagger
+            </a>
+          </small>
+        </div>
       </Container>
     </StyledFooter>
   );

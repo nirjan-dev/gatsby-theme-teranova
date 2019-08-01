@@ -74,7 +74,6 @@ const Ul = styled.ul`
 const StyledLink = styled(AnchorLink)`
   color: black;
   transition: all 300ms ease-out;
-  border-bottom: 3px solid transparent;
   padding: 1.3rem 1rem;
   position: relative;
   text-decoration: none;

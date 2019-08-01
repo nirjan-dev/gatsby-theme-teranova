@@ -1,5 +1,5 @@
-const config = require('./src/data');
-module.exports = {
+const config = require('./data');
+module.exports = ({headingFont="Vollkorn",bodyFont="Roboto"}) =>  ({
   siteMetadata: {
     ...config,
   },
@@ -15,7 +15,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `data`,
-        path: `${__dirname}/src/data/`,
+        path: `${__dirname}/data/`,
       },
     },
 
@@ -30,5 +30,19 @@ module.exports = {
     `gatsby-plugin-theme-ui`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: headingFont,
+          },
+          {
+            family: bodyFont,
+          },
+        ],
+      },
+    },
   ],
-};
+});
