@@ -3,7 +3,7 @@ export const theme = {
     body: '"Roboto",sans-serif',
     heading: '"Vollkron",serif',
   },
-  fontSizes: [0.618, 1, 1.618, 2.618, 4.236, 6.854],
+  fontSizes: [0.75, 1, 1.33, 1.77, 2.369, 3.157],
   fontWeights: {
     body: 400,
     heading: '700',

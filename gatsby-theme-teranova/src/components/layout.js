@@ -5,6 +5,7 @@ import 'normalize.css';
 import { theme } from '../theme';
 import { ThemeProvider } from 'theme-ui';
 import { Global, css } from '@emotion/core';
+import Footer from './footer';
 function Layout({ children }) {
   return (
     <ThemeProvider theme={theme}>
@@ -17,7 +18,7 @@ function Layout({ children }) {
           }
           body {
             line-height: ${theme.lineHeights.body};
-            font-size: calc(0.1vw + ${theme.fontSizes[1]}rem);
+            font-size: calc(0.3vw + ${theme.fontSizes[0]}rem);
             font-family: ${theme.fonts.body};
             @media (max-width: 40rem) {
               font-size: calc(1.2vw + ${theme.fontSizes[0]}rem);
@@ -48,11 +49,21 @@ function Layout({ children }) {
           h5 {
             font-size: ${theme.fontSizes[1]}rem;
           }
+          a {
+            text-decoration: none;
+            color: ${theme.colors.secondary};
+            transition: color 200ms ease-out;
+            &:hover,
+            &:focus {
+              color: ${theme.colors.primary};
+            }
+          }
         `}
       />
       <SEO />
       <Header />
       <main>{children}</main>
+      <Footer />
     </ThemeProvider>
   );
 }
