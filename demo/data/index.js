@@ -2,7 +2,7 @@ module.exports = {
   title: 'Teranova',
   description: 'A single page gatsby theme created by Nirjan Khadka',
   url: 'https://www.studiodagger.com',
-  image: '/images/todo.jpg',
+  image: '/images/banner.png',
   twitterUsername: '@nirjankhadka',
   facebookUsername: 'nirjankhadka13',
   instagramUsername: 'nk13.dev',

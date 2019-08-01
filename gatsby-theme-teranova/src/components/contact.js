@@ -44,7 +44,7 @@ function Contact() {
               <p>{data.site.siteMetadata.email}</p>
               <p>{data.site.siteMetadata.address}</p>
               <a
-                href={data.site.siteMetadata.twitterUsername}
+                 href={`https://twitter.com/${data.site.siteMetadata.twitterUsername}`}
                 rel="noopener"
                 target="_blank"
               >
@@ -52,7 +52,7 @@ function Contact() {
               </a>
               <br />
               <a
-                href={data.site.siteMetadata.facebookUsername}
+                href={`https://facebook.com/${data.site.siteMetadata.facebookUsername}`}
                 rel="noopener"
                 target="_blank"
               >
@@ -61,7 +61,7 @@ function Contact() {
               <br />
               <a
                 rel="noopener"
-                href={data.site.siteMetadata.instagramUsername}
+               href={`https://instagram.com/${data.site.siteMetadata.instagramUsername}`}
                 target="_blank"
               >
                 Instagram
