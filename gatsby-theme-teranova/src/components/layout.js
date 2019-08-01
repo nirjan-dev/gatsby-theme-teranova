@@ -19,6 +19,9 @@ function Layout({ children }) {
             line-height: ${theme.lineHeights.body};
             font-size: calc(0.1vw + ${theme.fontSizes[1]}rem);
             font-family: ${theme.fonts.body};
+            @media (max-width: 40rem) {
+              font-size: calc(1.2vw + ${theme.fontSizes[0]}rem);
+            }
           }
           h1,
           h2,

@@ -26,6 +26,10 @@ const Banner = styled.section`
   h6 {
     font-size: ${props => props.theme.fontSizes[3]}rem;
     margin-bottom: ${props => props.theme.spacing[2]}rem;
+    @media (max-width: 40rem) {
+      font-size: ${props => props.theme.fontSizes[2]}rem;
+      margin-bottom: ${props => props.theme.spacing[1]}rem;
+    }
   }
 `;
 function Intro() {

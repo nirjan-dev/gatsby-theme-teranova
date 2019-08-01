@@ -18,6 +18,7 @@ module.exports = {
         path: `${__dirname}/src/data/`,
       },
     },
+
     {
       resolve: `gatsby-plugin-mdx`,
       options: {

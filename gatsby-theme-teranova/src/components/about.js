@@ -39,13 +39,13 @@ function About() {
     <AboutSection>
       <Container>
         <Heading>{data.mdx.frontmatter.title}</Heading>
-        <Flex>
-          <Box m={[1, 2, 3]} width={[1, 1 / 2, 2 / 3]}>
+        <Flex flexWrap={['wrap', 'nowrap']}>
+          <Box m={[2, 3]} width={[1, 1 / 2, 2 / 3]}>
             <div className="about-content">
               <MDXRenderer>{data.mdx.body}</MDXRenderer>
             </div>
           </Box>
-          <Box m={[1, 2, 3]} width={[1, 1 / 2, 1 / 3]}>
+          <Box m={[2, 3]} width={[1, 1 / 2, 1 / 3]}>
             <Img
               fluid={data.mdx.frontmatter.img.childImageSharp.fluid}
               fadeIn={true}
