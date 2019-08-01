@@ -10,7 +10,7 @@ const Banner = styled.section`
   position: relative;
 
   .banner-background {
-    padding: ${props => props.theme.spacing[5]}rem 0;
+    padding: ${props => props.theme.spacing[6]}rem 0;
     background: ${props => props.theme.colors.primaryGradient};
   }
 
@@ -54,7 +54,7 @@ function Intro() {
     data.mdx.frontmatter.img.childImageSharp.fluid,
   ];
   return (
-    <Banner>
+    <Banner id="intro">
       <BackgroundImage
         Tag="div"
         className="banner-background"

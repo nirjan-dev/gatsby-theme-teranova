@@ -26,7 +26,7 @@ function Contact() {
     }
   `);
   return (
-    <ContactSection>
+    <ContactSection id="contact">
       <Container>
         <Heading>Contact us</Heading>
         <Flex flexWrap={['wrap', 'nowrap']}>

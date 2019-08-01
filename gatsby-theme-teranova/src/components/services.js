@@ -27,7 +27,7 @@ function Services() {
     }
   `);
   return (
-    <ServicesSection>
+    <ServicesSection id="services">
       <Container>
         <Heading>Our Services</Heading>
         <Flex flexWrap={['wrap', 'nowrap']}>

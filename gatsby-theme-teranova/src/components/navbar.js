@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
-
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 const navItems = [
   {
     name: 'About',
@@ -67,20 +67,21 @@ const Ul = styled.ul`
       &:nth-of-type(3) {
         transition-delay: 300ms;
       }
-      &:nth-of-type(4) {
-        transition-delay: 400ms;
-      }
     }
   }
 `;
 
-const StyledLink = styled.a`
+const StyledLink = styled(AnchorLink)`
   color: black;
   transition: all 300ms ease-out;
   border-bottom: 3px solid transparent;
   padding: 1.3rem 1rem;
   position: relative;
   text-decoration: none;
+  &:hover,
+  &:focus {
+    color: ${props => props.theme.colors.secondary};
+  }
   @media (min-width: 845px) {
     margin-left: 1.5rem;
     &::after {
@@ -98,7 +99,7 @@ const StyledLink = styled.a`
     &:focus,
     &:active,
     &.active {
-      color: green;
+      color: ${props => props.theme.colors.secondary};
     }
     &:hover:after,
     &:focus:after,

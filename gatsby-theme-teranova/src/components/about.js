@@ -36,7 +36,7 @@ function About() {
     }
   `);
   return (
-    <AboutSection>
+    <AboutSection id="about">
       <Container>
         <Heading>{data.mdx.frontmatter.title}</Heading>
         <Flex flexWrap={['wrap', 'nowrap']}>

@@ -24,6 +24,7 @@
     "gatsby-transformer-sharp": "^2.2.5",
     "normalize.css": "^8.0.1",
     "prop-types": "^15.7.2",
+    "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-helmet": "^5.2.1",
     "theme-ui": "^0.2.23"
   },

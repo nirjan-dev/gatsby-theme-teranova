@@ -6,6 +6,12 @@ import NavToggle from '../components/navToggle';
 
 const HeaderStyled = styled.header`
   display: grid;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: ${props => props.theme.colors.white};
   grid-template-columns: minmax(80px, 150px) 1fr;
   padding: 0rem 1rem;
   align-items: center;
