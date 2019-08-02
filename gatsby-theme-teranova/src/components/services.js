@@ -30,10 +30,10 @@ function Services() {
     <ServicesSection id="services">
       <Container>
         <Heading>Our Services</Heading>
-        <Flex flexWrap={['wrap', 'nowrap']}>
+        <Flex flexWrap={['wrap', 'wrap', 'nowrap']}>
           {data.allMdx.nodes.map(service => {
             return (
-              <Box m={[2, 3]} width={[1, 1 / 2, 1 / 4]}>
+              <Box p={[2, 2, 3]} width={[1, 1 / 2, 1 / 4]}>
                 <Service>
                   <h4 className="title">{service.frontmatter.title}</h4>
                   <MDXRenderer>{service.body}</MDXRenderer>

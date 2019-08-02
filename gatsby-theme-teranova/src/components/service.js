@@ -7,9 +7,6 @@ const Service = styled.article`
   transition: all 300ms ease-out;
   .title {
     margin-bottom: ${props => props.theme.spacing[1]}rem;
-    @media (max-width: 40rem) {
-      font-size: ${props => props.theme.fontSizes[1]}rem;
-    }
   }
   &:hover {
     transform: scale(1.05);
