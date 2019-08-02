@@ -8,13 +8,6 @@ import { useStaticQuery, graphql } from 'gatsby';
 const ContactSection = styled.section`
   text-align: center;
   padding: ${props => props.theme.spacing[2]}rem 0;
-  a {
-    padding: ${props => props.theme.spacing[0]}rem
-      ${props => props.theme.spacing[1]}rem;
-    margin: ${props => props.theme.spacing[1]}rem 0;
-    display: inline-block;
-    border: 3px solid currentColor;
-  }
 `;
 function Contact() {
   const data = useStaticQuery(graphql`
