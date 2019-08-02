@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "author": "nk13",
+  "repository": "https://github.com/NK-WebDev/gatsby-theme-teranova",
+  "keywords": "gatsby,gatsby-theme,gatsby-plugin",
   "scripts": {
     "build": "gatsby build",
     "clean": "gatsby clean",
