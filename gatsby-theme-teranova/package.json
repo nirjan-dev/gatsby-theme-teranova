@@ -1,11 +1,11 @@
 {
   "name": "gatsby-theme-teranova",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "index.js",
   "license": "MIT",
   "author": "nk13",
   "repository": "https://github.com/NK-WebDev/gatsby-theme-teranova",
-  "keywords": "gatsby,gatsby-theme,gatsby-plugin",
+  "keywords": "gatsby,gatsby-theme,gatsby-plugin,theme,single page theme",
   "scripts": {
     "build": "gatsby build",
     "clean": "gatsby clean",
