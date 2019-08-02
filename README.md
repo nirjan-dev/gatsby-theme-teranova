@@ -75,68 +75,93 @@ To use this theme in your Gatsby sites, follow these instructions:
 
 4. Create a `src/gatsby-theme-teranova/data/index.js` file and pass in this object of data to override the theme's data:
    ```js
-     module.exports = {
-    title: 'Teranova',
-    description: 'A single page gatsby theme created by Nirjan Khadka',
-    url: 'https://www.studiodagger.com',
-    image: '/images/todo.jpg',
-    twitterUsername: '@nirjankhadka',
-    facebookUsername: 'nirjankhadka13',
-    instagramUsername: 'nk13.dev',
-    phone: '555 219 619',
-    email: 'info@teranova.com',
-    address: 'Stewart Street, Marks Avenue, California',
-    mapUrl:
-      'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.033277112893!2d-118.26944278515673!3d34.04301748060843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c7b85dea2a93%3A0x1ff47c3ceb7bb2d5!2sSTAPLES+Center!5e0!3m2!1sen!2snp!4v1564632144369!5m2!1sen!2snp',
-    logo: '/images/logo.svg',
-  };
-
+    module.exports = {
+      title: 'Teranova',
+      description: 'A single page gatsby theme created by Nirjan Khadka',
+      url: 'https://nifty-sinoussi-4a8cab.netlify.com',
+      image: '/images/banner.png',
+      twitterUsername: '@nirjankhadka',
+      facebookUsername: 'nirjankhadka13',
+      instagramUsername: 'nk13.dev',
+      phone: '555 219 619',
+      email: 'info@teranova.com',
+      address: 'Stewart Street, Marks Avenue, California',
+      mapUrl:
+        'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.033277112893!2d-118.26944278515673!3d34.04301748060843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c7b85dea2a93%3A0x1ff47c3ceb7bb2d5!2sSTAPLES+Center!5e0!3m2!1sen!2snp!4v1564632144369!5m2!1sen!2snp',
+      logo: '/images/logo.svg',
+      trackingId: 'UA-135638651-2', //google analytics
+      // options for gatsby plugin manifest
+      shortName: 'teranova',
+      pathPrefix: '/',
+      backgroundColor: '#F9F9F9',
+      themeColor: '#FFD700',
+      favicon: 'static/images/favicon.png', // path from the root
+      // gatsby sitemap plugin needs this
+      siteUrl: 'https://nifty-sinoussi-4a8cab.netlify.com',
+    };
+    
    ```
+5. Add a src/pages/index.mdx file to your project with the following components
+```mdx
+    import Intro from 'gatsby-theme-teranova/src/components/intro';
+    import About from 'gatsby-theme-teranova/src/components/about';
+    import Services from 'gatsby-theme-teranova/src/components/services';
+    import Contact from 'gatsby-theme-teranova/src/components/contact';
 
-5.  Start your site
+    <Intro />
+
+    <About />
+
+    <Services />
+
+    <Contact />
+```
+    you can reorder the components or add new custom components here
+
+6. Add static/images/favicon.png to your project. The gatsby-plugin-manifest needs this image.
+
+7.  Start your site
     ```sh
     gatsby develop
     ```
 
-6.  You can override colors by creating a `src/gatsby-theme-teranova/src/theme.js` file with object:
+8.  You can override colors by creating a `src/gatsby-theme-teranova/src/theme.js` file with object:
      ```js
      export const theme = {
-    fonts: {
-      families: ['Roboto', 'Vollkorn'],
-      body: '"Roboto",sans-serif',
-      heading: '"Vollkorn",serif',
-    },
-    fontSizes: [0.75, 1, 1.33, 1.77, 2.369, 3.157],
-    fontWeights: {
-      body: 400,
-      heading: '700',
-      bold: 700,
-    },
-    spacing: [0.618, 1, 1.618, 2.618, 4.236, 6.854, 11.089],
-    lineHeights: {
-      body: 1.7,
-      heading: 1.2,
-    },
-    letterSpacings: {
-      body: 'normal',
-      caps: '0.2rem',
-    },
-    colors: {
-      primary: '#FFD700',
-      dark: '#333',
-      grey: '#B2AB99',
-      secondaryLight: '#00FFD8',
-      secondary: '#03866e',
-      darkLight: '#5A5751',
-      greyLight: '#F9F9F9',
-      white: '#FEFEFE',
-      secondaryDark: '#065648',
-      primaryGradient:
-        'linear-gradient(to right, rgba(242, 153, 74,0.9), rgba(242, 201, 76,0.4))',
-    },
-  };
-
-   ```
+        fonts: {
+          families: ['Roboto', 'Vollkorn'],
+          body: '"Roboto",sans-serif',
+          heading: '"Vollkorn",serif',
+        },
+        fontSizes: [0.75, 1, 1.33, 1.77, 2.369, 3.157],
+        fontWeights: {
+          body: 400,
+          heading: '700',
+          bold: 700,
+        },
+        spacing: [0.618, 1, 1.618, 2.618, 4.236, 6.854, 11.089],
+        lineHeights: {
+          body: 1.7,
+          heading: 1.2,
+        },
+        letterSpacings: {
+          body: 'normal',
+          caps: '0.2rem',
+        },
+        colors: {
+          primary: '#FFD700',
+          dark: '#333',
+          grey: '#B2AB99',
+          secondaryLight: '#00FFD8',
+          secondary: '#03866e',
+          darkLight: '#5A5751',
+          greyLight: '#F9F9F9',
+          white: '#FEFEFE',
+          secondaryDark: '#065648',
+          primaryGradient:
+            'linear-gradient(to right, rgba(242, 153, 74,0.9), rgba(242, 201, 76,0.4))',
+        },
+    };
 ```
 
 
