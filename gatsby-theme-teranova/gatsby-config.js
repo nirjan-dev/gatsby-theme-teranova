@@ -47,6 +47,20 @@ module.exports = ({ headingFont = 'Vollkorn', bodyFont = 'Roboto' }) => ({
     `gatsby-plugin-emotion`,
     'gatsby-plugin-sitemap',
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: config.title,
+        short_name: config.shortName,
+        description: config.description,
+        start_url: config.pathPrefix,
+        background_color: config.backgroundColor,
+        theme_color: config.themeColor,
+        display: 'standalone',
+        icon: config.favicon,
+      },
+    },
+    `gatsby-plugin-offline`,
+    {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         // You can add multiple tracking ids and a pageview event will be fired for all of them.
