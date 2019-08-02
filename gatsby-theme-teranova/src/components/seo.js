@@ -2,7 +2,6 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
-import { theme } from '../theme';
 const SEO = ({ title, description, image, pathname, article }) => (
   <StaticQuery
     query={query}
@@ -51,7 +50,6 @@ const SEO = ({ title, description, image, pathname, article }) => (
             <meta property="og:title" content={seo.title} />
             <meta property="og:description" content={seo.description} />
             <meta property="og:image" content={seo.image} />
-              
           </Helmet>
         </>
       );

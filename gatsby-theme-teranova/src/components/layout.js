@@ -18,12 +18,9 @@ function Layout({ children }) {
           }
           body {
             line-height: ${theme.lineHeights.body};
-            font-size: calc(0.3vw + ${theme.fontSizes[0]}rem);
+
             font-family: ${theme.fonts.body};
             color: ${theme.colors.dark};
-            @media (max-width: 40rem) {
-              font-size: calc(1.2vw + ${theme.fontSizes[0]}rem);
-            }
           }
           h1,
           h2,

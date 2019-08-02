@@ -28,7 +28,7 @@ function Footer() {
             Website By:
             <a
               href="https://www.studiodagger.com"
-              rel="noopener"
+              rel="noopener noreferrer"
               target="_blank"
             >
               Studiodagger

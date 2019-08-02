@@ -4,7 +4,7 @@ export const theme = {
     body: '"Roboto",sans-serif',
     heading: '"Vollkorn",serif',
   },
-  fontSizes: [0.75, 1, 1.33, 1.77, 2.369, 3.157],
+  fontSizes: [0.8, 1, 1.25, 1.56, 1.953, 2.441, 3.053],
   fontWeights: {
     body: 400,
     heading: '700',
@@ -30,6 +30,6 @@ export const theme = {
     white: '#FEFEFE',
     secondaryDark: '#065648',
     primaryGradient:
-      'linear-gradient(to right, rgba(242, 153, 74,0.9), rgba(242, 201, 76,0.4))',
+      'linear-gradient(to right, rgba(242, 153, 74,0.8), rgba(242, 201, 76,0.5))',
   },
 };

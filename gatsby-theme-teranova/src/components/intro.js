@@ -24,11 +24,11 @@ const Banner = styled.section`
   h4,
   h5,
   h6 {
-    font-size: ${props => props.theme.fontSizes[3]}rem;
+    font-size: ${props => props.theme.fontSizes[4]}rem;
     margin-bottom: ${props => props.theme.spacing[2]}rem;
 
     @media (max-width: 40rem) {
-      font-size: ${props => props.theme.fontSizes[2]}rem;
+      font-size: ${props => props.theme.fontSizes[3]}rem;
       margin-bottom: ${props => props.theme.spacing[1]}rem;
     }
   }

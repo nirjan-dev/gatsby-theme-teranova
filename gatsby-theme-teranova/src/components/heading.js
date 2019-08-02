@@ -5,10 +5,10 @@ const heading = styled.h2`
   text-align: center;
   position: relative;
   margin: ${props => props.theme.spacing[3]}rem 0;
-  font-size: ${props => props.theme.fontSizes[3]}rem;
+  font-size: ${props => props.theme.fontSizes[4]}rem;
   @media (max-width: 40rem) {
     margin: ${props => props.theme.spacing[2]}rem 0;
-    font-size: ${props => props.theme.fontSizes[2]}rem;
+    font-size: ${props => props.theme.fontSizes[3]}rem;
   }
   &::after {
     content: '';
