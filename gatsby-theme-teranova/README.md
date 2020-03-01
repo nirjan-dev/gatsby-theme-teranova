@@ -145,7 +145,7 @@ To use this theme in your Gatsby sites, follow these instructions:
     gatsby develop
     ```
 
-8.  You can override colors by creating a `src/gatsby-theme-teranova/src/theme.js` file with object:
+8.  You can override colors by creating a `src/gatsby-theme-teranova/theme.js` file with object:
     ```js
     export const theme = {
       fonts: {
