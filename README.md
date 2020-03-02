@@ -118,7 +118,7 @@ To use this theme in your Gatsby sites, follow these instructions:
       siteUrl: "https://nifty-sinoussi-4a8cab.netlify.com"
     };
     ```
-5.  Add a src/pages/index.mdx file to your project with the following components
+5.  Add a `src/gatsby-theme-teranova/pages/index.mdx` file to your project with the following components
 
     ```mdx
         import Intro from 'gatsby-theme-teranova/src/components/intro';
