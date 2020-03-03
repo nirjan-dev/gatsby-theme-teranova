@@ -2,7 +2,7 @@
 
 Teranova is a free open-source gatsby theme which you can use to make a simple, modern and customizable responsive landing page.
 
-You can view the [live demo](https://nifty-sinoussi-4a8cab.netlify.com) hosted on netlify to see how it looks by default.
+You can view the [live demo](https://teranova.netlify.com/) to see how it looks.
 
 ## Features
 
@@ -118,7 +118,7 @@ To use this theme in your Gatsby sites, follow these instructions:
       siteUrl: "https://nifty-sinoussi-4a8cab.netlify.com"
     };
     ```
-5.  Add a src/pages/index.mdx file to your project with the following components
+5.  Add a `src/gatsby-theme-teranova/pages/index.mdx` file to your project with the following components
 
     ```mdx
         import Intro from 'gatsby-theme-teranova/src/components/intro';
@@ -145,7 +145,7 @@ To use this theme in your Gatsby sites, follow these instructions:
     gatsby develop
     ```
 
-8.  You can override colors by creating a `src/gatsby-theme-teranova/theme.js` file with object:
+8.  You can override colors by creating a `src/gatsby-theme-teranova/src/theme.js` file with object:
     ```js
     export const theme = {
       fonts: {
