@@ -11,10 +11,10 @@ const navItems = [
     name: 'Services',
     link: '#services',
   },
-  {
-    name: 'Custom',
-    link: '#custom',
-  },
+//  {
+//    name: 'Custom',
+//    link: '#custom',
+//  },
   {
     name: 'Contact',
     link: '#contact',
