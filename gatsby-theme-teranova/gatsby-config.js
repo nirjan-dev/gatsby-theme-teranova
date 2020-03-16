@@ -1,4 +1,4 @@
-const config = require('./data');
+const config = require('./teranova-theme-data');
 module.exports = ({ headingFont = 'Vollkorn', bodyFont = 'Roboto' }) => ({
   siteMetadata: {
     ...config,
@@ -8,7 +8,7 @@ module.exports = ({ headingFont = 'Vollkorn', bodyFont = 'Roboto' }) => ({
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `data`,
-        path: `${__dirname}/data/`,
+        path: `./teranova-theme-data/`,
       },
     },
 

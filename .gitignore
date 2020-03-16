@@ -1,3 +1,4 @@
 node_modules/
 .cache/
 **/public/
+demo/teranova-theme-data/
