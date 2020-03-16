@@ -6,7 +6,12 @@ import { theme } from '../theme';
 import { ThemeProvider } from 'theme-ui';
 import { Global, css } from '@emotion/core';
 import Footer from './footer';
-function Layout({ children }) {
+import Intro from './intro';
+import About from './about';
+import Services from './services';
+import Contact from './contact';
+
+function Layout() {
   return (
     <ThemeProvider theme={theme}>
       <Global
@@ -60,7 +65,15 @@ function Layout({ children }) {
       />
       <SEO />
       <Header />
-      <main>{children}</main>
+      <main>
+        <Intro />
+
+        <About />
+
+        <Services />
+
+        <Contact />
+      </main>
       <Footer />
     </ThemeProvider>
   );

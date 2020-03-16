@@ -7,13 +7,6 @@ module.exports = ({ headingFont = 'Vollkorn', bodyFont = 'Roboto' }) => ({
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `pages`,
-        path: `${__dirname}/src/pages/`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
         name: `data`,
         path: `${__dirname}/data/`,
       },
@@ -21,11 +14,7 @@ module.exports = ({ headingFont = 'Vollkorn', bodyFont = 'Roboto' }) => ({
 
     {
       resolve: `gatsby-plugin-mdx`,
-      options: {
-        defaultLayouts: {
-          default: require.resolve('./src/components/layout.js'),
-        },
-      },
+      options: {},
     },
     `gatsby-plugin-theme-ui`,
     `gatsby-transformer-sharp`,
