@@ -28,7 +28,23 @@ module.exports = themeOptions => {
         bodyFont: themeOptions.bodyFont || 'Roboto',
 
         // content direcoty name
-        contentFolder: themeOptions.contentFolder || 'teranova-theme-data'
+        contentFolder: themeOptions.contentFolder || 'teranova-theme-data',
+
+        // navbar links
+        navLinks: [
+            {
+                label: 'About',
+                link: '#about'
+            },
+            {
+                label: 'Services',
+                link: '#services'
+            },
+            {
+                label: 'Contact',
+                link: '#contact'
+            }
+        ]
     }
 }
 

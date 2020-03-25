@@ -2,20 +2,8 @@ import React from 'react';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-const navItems = [
-  {
-    name: 'About',
-    link: '#about',
-  },
-  {
-    name: 'Services',
-    link: '#services',
-  },
-  {
-    name: 'Contact',
-    link: '#contact',
-  },
-];
+import { useStaticQuery, graphql } from 'gatsby';
+
 
 const Nav = styled.nav`
   @media (max-width: 844px) {
@@ -114,12 +102,25 @@ Navbar.propTypes = {
 };
 
 function Navbar({ isOpen }) {
+  const data = useStaticQuery(graphql`
+    {
+      site {
+        siteMetadata {
+          navLinks {
+            label
+            link
+          }
+        }
+      }
+    }
+  `);
+  const navItems = data.site.siteMetadata.navLinks;
   return (
     <Nav className={isOpen ? 'is-open' : ''}>
       <Ul>
         {navItems.map(item => (
-          <li key={item.name}>
-            <StyledLink href={item.link}>{item.name}</StyledLink>
+          <li key={item.label}>
+            <StyledLink href={item.link}>{item.label}</StyledLink>
           </li>
         ))}
       </Ul>
