@@ -21,6 +21,9 @@ function Layout() {
             padding: 0;
             box-sizing: border-box;
           }
+          html {
+            scroll-behavior: smooth;
+          }
           body {
             line-height: ${theme.lineHeights.body};
 

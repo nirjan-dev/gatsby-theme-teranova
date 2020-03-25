@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { useStaticQuery, graphql } from 'gatsby';
 
 
@@ -59,7 +58,7 @@ const Ul = styled.ul`
   }
 `;
 
-const StyledLink = styled(AnchorLink)`
+const StyledLink = styled('a')`
   color: black;
   transition: all 300ms ease-out;
   padding: 1.3rem 1rem;
