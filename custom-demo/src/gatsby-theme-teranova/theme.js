@@ -1,8 +1,8 @@
 export const theme = {
     fonts: {
-      families: ["Roboto", "Vollkorn"],
-      body: '"Roboto",sans-serif',
-      heading: '"Vollkorn",serif'
+      families: ["Raleway", "Open Sans"],
+      body: '"Raleway",sans-serif',
+      heading: '"Open Sans",serif'
     },
     fontSizes: [0.75, 1, 1.33, 1.77, 2.369, 3.157],
     fontWeights: {

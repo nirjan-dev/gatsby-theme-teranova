@@ -5,14 +5,18 @@ You can view the [live demo](https://teranova.netlify.com/) to see how it looks.
 
 ## Features
 
-1. 4 different sections (header, about us, services, contact) by default
-2. Easy to customize styles with [theme UI](https://theme-ui.com/)
-3. Google map embed and Google analytics
-4. Smooth scrolling links
-5. MDX
-6. Good SEO support with React Helmet
-7. PWA
-8. Sitemap
+- 4 different sections (header, about us, services, contact) by default
+- Easy to customize styles with [theme UI](https://theme-ui.com/)
+- Google map embed and Google analytics
+- Smooth scrolling links
+- MDX support
+- Good SEO support with React Helmet and a default seo component
+- PWA
+- Sitemap (in case you want to add extra pages)
+- Responsive design
+- Emotion for styling
+- Prefetched google fonts
+- Supports any google font 
 
 ## Installation
 
@@ -40,7 +44,7 @@ To use this theme in your Gatsby sites, follow these instructions:
           options: {
             title: 'Teranova',
             description: 'A single page gatsby theme created by Nirjan Khadka',
-            image: themeOptions.image || '/images/banner.png', // for image meta tag (lmage location within the static folder)
+            image: '/images/banner.png', // for image meta tag (lmage location within the static folder)
             twitterUsername: '@nk13_codes', // the site link (eg: https://twitter.com/) will be added for all social links so just put the profile name here
             facebookUsername: 'nk13_codes',
             instagramUsername: 'nk13_codes',
@@ -48,7 +52,7 @@ To use this theme in your Gatsby sites, follow these instructions:
             email: 'info@teranova.com',
             address: 'Stewart Street, Marks Avenue, California',
             mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.033277112893!2d-118.26944278515673!3d34.04301748060843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c7b85dea2a93%3A0x1ff47c3ceb7bb2d5!2sSTAPLES+Center!5e0!3m2!1sen!2snp!4v1564632144369!5m2!1sen!2snp', // google maps iframe url
-            logo: themeOptions.logo || '/images/logo.svg', // link from the static folder
+            logo: '/images/logo.svg', // link from the static folder
             trackingId: 'UA-135638651-2', // GA key
             // options for gatsby plugin manifest (go to there docs to learn more)
             shortName: 'teranova',
@@ -263,6 +267,15 @@ To use this theme in your Gatsby sites, follow these instructions:
   }
 
   export default Layout;
+  ```
+  You also need to change the import paths of the theme components if you decide to use them like this
+
+  ```jsx
+  import Footer from 'gatsby-theme-teranova/src/components/footer';
+  import Intro from 'gatsby-theme-teranova/src/components/intro';
+  import About from 'gatsby-theme-teranova/src/components/about';
+  import Services from 'gatsby-theme-teranova/src/components/services';
+  import Contact from 'gatsby-theme-teranova/src/components/contact';
   ```
 
 If you get stuck then take a look at the examples in [this repo](http://github.com/NK-WebDev/gatsby-theme-teranova) or [create an issue](https://github.com/NK-WebDev/gatsby-theme-teranova/issues/new) with sufficient info on the problem. Collaborators are welcomed.

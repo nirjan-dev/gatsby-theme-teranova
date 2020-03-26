@@ -31,7 +31,7 @@ module.exports = themeOptions => {
         contentFolder: themeOptions.contentFolder || 'teranova-theme-data',
 
         // navbar links
-        navLinks: [
+        navLinks: themeOptions.navLinks || [
             {
                 label: 'About',
                 link: '#about'

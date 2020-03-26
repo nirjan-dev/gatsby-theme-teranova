@@ -2,7 +2,8 @@
   "private": true,
   "workspaces": [
     "gatsby-theme-teranova",
-    "demo"
+    "custom-demo",
+    "default-demo"
   ],
   "license": "MIT"
 }
