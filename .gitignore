@@ -1,5 +1,5 @@
 node_modules/
 .cache/
 **/public/
-custom-demo/teranova-theme-data/
-default-demo/custom-data-folder/
+custom-demo/custom-data-folder/
+default-demo/teranova-theme-data/
