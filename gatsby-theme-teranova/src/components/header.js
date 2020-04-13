@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import NavBrand from './navBrand';
-import Navbar from './navbar';
+import NavBrand from 'gatsby-theme-teranova/src/components/navBrand';
+import Navbar from 'gatsby-theme-teranova/src/components/navbar';
 import styled from '@emotion/styled';
-import NavToggle from '../components/navToggle';
+import NavToggle from 'gatsby-theme-teranova/src/components/navToggle';
 
 const HeaderStyled = styled.header`
   display: grid;

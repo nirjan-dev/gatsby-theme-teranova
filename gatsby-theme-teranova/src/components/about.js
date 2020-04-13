@@ -1,11 +1,11 @@
 import React from 'react';
-import Heading from './heading';
+import Heading from 'gatsby-theme-teranova/src/components/heading';
 import styled from '@emotion/styled';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { Flex, Box } from '@rebass/grid/emotion';
-import Container from './container';
+import Container from 'gatsby-theme-teranova/src/components/container';
 const AboutSection = styled.section`
   text-align: center;
   padding: ${props => props.theme.spacing[2]}rem 0;

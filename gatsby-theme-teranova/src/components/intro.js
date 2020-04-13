@@ -2,9 +2,9 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import styled from '@emotion/styled';
-import Container from './container';
+import Container from 'gatsby-theme-teranova/src/components/container';
 import BackgroundImage from 'gatsby-background-image';
-import { theme } from '../theme';
+import { theme } from 'gatsby-theme-teranova/src/theme';
 const Banner = styled.section`
   color: ${props => props.theme.colors.white};
   position: relative;

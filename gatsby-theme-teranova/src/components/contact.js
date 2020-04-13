@@ -1,9 +1,9 @@
 import React from 'react';
-import Heading from './heading';
+import Heading from 'gatsby-theme-teranova/src/components/heading';
 import styled from '@emotion/styled';
-import Container from './container';
+import Container from 'gatsby-theme-teranova/src/components/container';
 import { Flex, Box } from '@rebass/grid/emotion';
-import ContactInfo from './contactInfo';
+import ContactInfo from 'gatsby-theme-teranova/src/components/contactInfo';
 import { useStaticQuery, graphql } from 'gatsby';
 const ContactSection = styled.section`
   text-align: center;

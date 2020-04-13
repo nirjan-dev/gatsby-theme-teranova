@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import Heading from './heading';
+import Heading from 'gatsby-theme-teranova/src/components/heading';
 import { graphql, useStaticQuery } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { Flex, Box } from '@rebass/grid/emotion';
-import Container from './container';
-import Service from './service';
+import Container from 'gatsby-theme-teranova/src/components/container';
+import Service from 'gatsby-theme-teranova/src/components/service';
 
 const ServicesSection = styled.section`
   text-align: center;

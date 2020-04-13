@@ -1,15 +1,15 @@
 import React from 'react';
-import Header from './header';
-import SEO from './seo';
+import Header from 'gatsby-theme-teranova/src/components/header';
+import SEO from 'gatsby-theme-teranova/src/components/seo';
 import 'normalize.css';
-import { theme } from '../theme';
+import { theme } from 'gatsby-theme-teranova/src/theme';
 import { ThemeProvider } from 'theme-ui';
 import { Global, css } from '@emotion/core';
-import Footer from './footer';
-import Intro from './intro';
-import About from './about';
-import Services from './services';
-import Contact from './contact';
+import Footer from 'gatsby-theme-teranova/src/components/footer';
+import Intro from 'gatsby-theme-teranova/src/components/intro';
+import About from 'gatsby-theme-teranova/src/components/about';
+import Services from 'gatsby-theme-teranova/src/components/services';
+import Contact from 'gatsby-theme-teranova/src/components/contact';
 
 function Layout() {
   return (

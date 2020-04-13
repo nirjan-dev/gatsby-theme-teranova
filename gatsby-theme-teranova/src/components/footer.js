@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import Container from './container';
+import Container from 'gatsby-theme-teranova/src/components/container';
 const StyledFooter = styled.footer`
   background-color: ${props => props.theme.colors.greyLight};
   padding: ${props => props.theme.spacing[1]}rem 0;

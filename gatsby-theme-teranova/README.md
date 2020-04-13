@@ -186,17 +186,17 @@ To use this theme in your Gatsby sites, follow these instructions:
 
   ```jsx
   import React from 'react';
-  import Header from './header';
-  import SEO from './seo';
+  import Header from 'gatsby-theme-teranova/src/components/header';
+  import SEO from 'gatsby-theme-teranova/src/components/seo';
   import 'normalize.css';
-  import { theme } from '../theme';
+  import { theme } from 'gatsby-theme-teranova/src/theme';
   import { ThemeProvider } from 'theme-ui';
   import { Global, css } from '@emotion/core';
-  import Footer from './footer';
-  import Intro from './intro';
-  import About from './about';
-  import Services from './services';
-  import Contact from './contact';
+  import Footer from 'gatsby-theme-teranova/src/components/footer';
+  import Intro from 'gatsby-theme-teranova/src/components/intro';
+  import About from 'gatsby-theme-teranova/src/components/about';
+  import Services from 'gatsby-theme-teranova/src/components/services';
+  import Contact from 'gatsby-theme-teranova/src/components/contact';
 
   function Layout() {
     return (
@@ -267,15 +267,6 @@ To use this theme in your Gatsby sites, follow these instructions:
   }
 
   export default Layout;
-  ```
-  You also need to change the import paths of the theme components if you decide to use them like this
-
-  ```jsx
-  import Footer from 'gatsby-theme-teranova/src/components/footer';
-  import Intro from 'gatsby-theme-teranova/src/components/intro';
-  import About from 'gatsby-theme-teranova/src/components/about';
-  import Services from 'gatsby-theme-teranova/src/components/services';
-  import Contact from 'gatsby-theme-teranova/src/components/contact';
   ```
 
 If you get stuck then take a look at the examples in [this repo](http://github.com/NK-WebDev/gatsby-theme-teranova) or [create an issue](https://github.com/NK-WebDev/gatsby-theme-teranova/issues/new) with sufficient info on the problem. Collaborators are welcomed.
