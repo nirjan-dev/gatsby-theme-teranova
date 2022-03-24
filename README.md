@@ -1,4 +1,7 @@
 # Gatsby Theme Teranova
+
+*Warning*: Not actively developed anymore
+
 Teranova is a free open-source gatsby theme which you can use to make a simple, modern and customizable responsive landing page.
 
 You can view the [live demo](https://teranova.netlify.com/) to see how it looks.
